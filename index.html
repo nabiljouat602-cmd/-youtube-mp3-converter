@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTMP3 Pro - YouTube to MP3 Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <div class="container">
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="logo">
+                    <i class="fab fa-youtube"></i>
+                    <span>YT<span class="highlight">MP3</span></span>
+                </div>
+                <h1>Convert YouTube to <span class="gradient-text">MP3</span></h1>
+                <p class="tagline">Extract high-quality audio in seconds • 192kbps • Free & Secure</p>
+            </div>
+        </div>
+
+        <div class="converter-card">
+            <div class="input-container">
+                <div class="url-input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="url" placeholder="Paste YouTube URL here...">
+                    <button id="clearBtn" class="clear-btn">×</button>
+                </div>
+                <button id="convertBtn" class="convert-btn">
+                    <span>Convert to MP3</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div id="previewCard" class="preview-card hidden">
+                <div class="preview-image">
+                    <img id="thumbnail" alt="Video thumbnail">
+                    <span id="durationBadge" class="duration-badge"></span>
+                </div>
+                <div class="preview-details">
+                    <h3 id="videoTitle">Video Title</h3>
+                    <p id="channelName">Channel Name</p>
+                </div>
+            </div>
+
+            <div id="statusCard" class="status-card">
+                <div class="status-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="status-content">
+                    <h4 id="statusTitle">Ready to Convert</h4>
+                    <p id="statusMessage">Paste a YouTube URL and click the convert button</p>
+                </div>
+            </div>
+
+            <div id="downloadCard" class="download-card hidden">
+                <div class="success-animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 id="downloadSongTitle">Song Title</h3>
+                <div class="file-info">
+                    <span><i class="fas fa-file-audio"></i> MP3 Audio</span>
+                    <span><i class="fas fa-chart-line"></i> 192 kbps</span>
+                    <span id="fileSize"><i class="fas fa-database"></i> 0 MB</span>
+                </div>
+                <a id="downloadLink" class="download-btn">
+                    <i class="fas fa-download"></i>
+                    Download MP3
+                </a>
+                <p class="expiry-note"><i class="fas fa-clock"></i> File expires in 15 minutes</p>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized conversion with minimal waiting time</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3>Studio Quality</h3>
+                <p>192kbps MP3 with crystal clear audio</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Secure & Private</h3>
+                <p>No registration, automatic file cleanup</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-infinity"></i>
+                </div>
+                <h3>Unlimited Usage</h3>
+                <p>No daily limits or hidden fees</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 YTMP3 Pro - YouTube to MP3 Converter</p>
+            <p class="disclaimer">For personal use only. Respect copyright laws.</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
